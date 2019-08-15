@@ -1,1 +1,1 @@
-import './sass/main.sass'
+import './main.sass'
