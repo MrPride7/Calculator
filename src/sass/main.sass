@@ -49,8 +49,7 @@ body,html
     min-width: 300px
     max-width: 500px
     height: 100%
-
-    background: rgba(255, 114, 23, 0.86)
+    background: linear-gradient(to left bottom, #051937, #3b1e57, #7f005d, #b90043, #d90000)
     border-radius: 5px
     padding: 0.5rem 0.5rem
 
@@ -64,7 +63,7 @@ body,html
     margin-bottom: 0.5rem
     font-size: 2rem
     font-weight: 100
-    background-color: #fff
+    background: #fff
     text-overflow: clip
     border-radius: 5px
 
@@ -74,31 +73,22 @@ body,html
     height: 5rem
     margin-bottom: 10px
     border-radius: 5px
-    background-color: #fd4343
-    box-shadow: 0 4px #ff6666
     font-size: 2rem
     text-transform: uppercase
-    color: #ff9999
-    transition: all 0.3s
+    transition: all 0.2s
     &:hover
         color: #111
         background-color: #fff
         box-shadow: 0 5px #8f8f8f
     &:active
-        box-shadow: 0 0px #8f8f8f
+        box-shadow: 0 0 #8f8f8f
         top: 5px
 
-.numbers__btn
-    width: 30%
-
-.actions__btn
-    width: 45%
-
-.btn_stretched
-    //flex-grow: 1
-
-.btn_stretched_around
-    align-self: stretch
+.calculator__btns
+    display: flex
+    flex-wrap: wrap
+    align-content: flex-start
+    justify-content: space-around
 
 .numbers
     width: 60%
@@ -106,9 +96,25 @@ body,html
 .actions
     width: 40%
 
-.calc__btns
-    display: flex
-    flex-wrap: wrap
-    align-content: flex-start
-    justify-content: space-around
+.numbers__btn
+    width: 30%
+    background-color: rgba(253, 67, 67, 0.50)
+    box-shadow: 0 4px #ff6666
+    color: #ff9999
+
+.actions__btn
+    width: 45%
+    background-color: rgba(87, 0, 72, 0.51)
+    box-shadow: 0 4px #3a0d57
+    color: #c600a5
+
+.numbers__btn_stretched
+    flex-basis: 64%
+
+.actions__btn_stretched
+    flex-basis: 94%
+
+
+
+
 
