@@ -7,7 +7,7 @@ html(lang="en")
         title Calculator
     body
         .wrap
-            form(name="calculator").calculator
+            form(name="calculator" id="calculator").calculator
                 .calculator__viewer(id="viewer") 0
                 .calculator__btns.numbers
                     button(value="7" type="button").btn.numbers__btn 7
@@ -28,7 +28,7 @@ html(lang="en")
                     button(value="ce" type="button").btn.actions__btn ce
                     button(value="+" type="button").btn.actions__btn +
                     button(value="-" type="button").btn.actions__btn -
-                    button(value="=" type="button").btn.actions__btn.actions__btn_stretched =
+                    button(value="=" type="button" id="equation").btn.actions__btn.actions__btn_stretched =
 
 
 
