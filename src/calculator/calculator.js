@@ -2,7 +2,7 @@
 
 const viewer = document.getElementById("viewer"); //viewer of calculator
 const allBtns = document.querySelectorAll(
-    "#calculator button.btn not(#equation)"); //all buttons of calculator
+    "#calculator button.btn:not(#equation)"); //all buttons of calculator
 let outData;
 let inputData = [];
 console.log(allBtns);
